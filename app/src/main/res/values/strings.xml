@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">加权成绩计算器</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_spec">检查课程数和总学分</string>
+    <string name="btn_exe">执行</string>
+    <string name="btn_del">连点三次清除全部数据</string>
+    <string name="expression">y=kx+b</string>
+    <string name="x_mean">X的均值:</string>
+    <string name="y_mean">Y的均值:</string>
+    <string name="x_devi">X 样本标准差:</string>
+    <string name="y_devi">Y 样本标准差:</string>
+    <string name="y_3">y_3</string>
+    <string name="x_3">x_3</string>
+    <string name="y_2">y_2</string>
+    <string name="x_2">x_2</string>
+    <string name="k">k</string>
+    <string name="x_1">x_1</string>
+    <string name="score_mean">score_mean</string>
+    <string name="grade_mean">k:</string>
+    <string name="score_devi">b:</string>
+    <string name="grade_devi">b:</string>
+    <string name="r">r:</string>
+    <string name="b">b:</string>
+    <string name="valid_data">课程数</string>
+    <string name="credit">学分</string>
+    <string name="grade">成绩</string>
+    <string name="valid_grade">加权成绩</string>
+    <string name="valid_credit">学分数</string>
+</resources>

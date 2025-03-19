@@ -1,0 +1,2363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_del"
+        android:onClick="del_click"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/btn_color_selector_1"
+        android:text="@string/btn_del"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_spec"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/btn_color_selector"
+        android:text="@string/btn_spec"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_exe"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="210dp"
+        android:backgroundTint="@color/btn_color_selector_2"
+        android:text="@string/btn_exe"
+        android:textColor="@color/black"/>
+
+    <GridLayout
+        android:id="@+id/xy"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/title_purple">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+            android:layout_row="0"
+            android:layout_column="1"
+            android:gravity="center"
+            android:text="@string/credit"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="@string/grade"
+            android:textStyle="bold" />
+
+        />
+
+    </GridLayout>
+
+    <ScrollView
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/xy">>
+
+        <GridLayout
+            android:layout_width="200dp"
+            android:layout_height="270dp"
+            android:layout_below="@+id/xy"
+            android:background="#37D8CEEF">
+
+            <EditText
+                android:id="@+id/score_1"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_1"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+            <EditText
+                android:id="@+id/credit_1"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_1"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+
+
+            <EditText
+                android:id="@+id/score_2"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_2"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_2"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_2"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_3"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_3"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_3"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_3"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_4"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_4"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_4"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_4"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_5"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_5"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_5"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_5"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_6"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_6"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_6"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_6"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_7"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_7"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_7"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_7"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_8"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_8"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_8"
+                android:layout_width="100dp"
+                android:layout_height="54dp"
+                android:layout_row="7"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_8"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_9"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_9"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_9"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="8"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_9"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_10"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_10"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_10"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="9"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_10"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_11"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="10"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_11"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_11"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="10"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_11"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_12"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="11"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_12"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_12"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="11"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_12"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_13"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="12"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_13"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_13"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="12"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_13"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_14"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="13"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_14"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_14"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="13"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_14"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_15"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="14"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_15"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_15"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="14"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_15"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_16"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="15"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_16"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_16"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="15"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_16"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_17"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="16"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_17"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_17"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="16"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_17"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_18"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="17"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_18"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_18"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="17"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_18"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_19"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="18"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_19"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_19"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="18"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_19"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_20"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="19"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_20"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_20"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="19"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_20"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_21"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="20"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_21"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_21"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="20"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_21"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_22"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="21"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_22"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_22"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="21"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_22"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_23"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="22"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_23"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+
+            <EditText
+                android:id="@+id/credit_23"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="22"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_23"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_24"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="23"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_24"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_24"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="23"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_24"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_25"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="24"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_25"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_25"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="24"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_25"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_26"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="25"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_26"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_26"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="25"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_26"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_27"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="26"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_27"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_27"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="26"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_27"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_28"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="27"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_28"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_28"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="27"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_28"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_29"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="28"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_29"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_29"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="28"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_29"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_30"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="29"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_30"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_30"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="29"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_30"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_31"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="30"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_31"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_31"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="30"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_31"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_32"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="31"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_32"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_32"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="31"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_32"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_33"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="32"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_33"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+
+            <EditText
+                android:id="@+id/credit_33"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="32"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_33"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_34"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="33"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_34"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_34"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="33"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_34"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_35"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="34"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_35"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_35"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="34"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_35"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_36"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="35"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_36"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_36"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="35"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_36"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_37"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="36"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_37"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_37"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="36"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_37"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_38"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="37"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_38"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_38"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="37"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_38"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_39"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="38"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_39"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_39"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="38"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_39"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_40"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="39"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_40"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_40"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="39"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_40"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_41"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="40"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_41"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_41"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="40"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_41"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_42"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="41"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_42"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_42"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="41"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_42"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_43"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="42"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_43"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+
+            <EditText
+                android:id="@+id/credit_43"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="42"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_43"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_44"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="43"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_44"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_44"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="43"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_44"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_45"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="44"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_45"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_45"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="44"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_45"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_46"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="45"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_46"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_46"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="45"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_46"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_47"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="46"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_47"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_47"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="46"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_47"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_48"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="47"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_48"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_48"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="47"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_48"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_49"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="48"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_49"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_49"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="48"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_49"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_50"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="49"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_50"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_50"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="49"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_50"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_51"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="50"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_51"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_51"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="50"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_51"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_52"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="51"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_52"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_52"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="51"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_52"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_53"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="52"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_53"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+
+            <EditText
+                android:id="@+id/credit_53"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="52"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_53"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_54"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="53"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_54"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_54"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="53"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_54"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_55"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="54"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_55"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_55"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="54"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_55"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_56"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="55"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_56"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_56"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="55"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_56"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_57"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="56"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_57"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_57"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="56"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_57"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_58"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="57"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_58"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_58"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="57"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_58"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_59"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="58"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_59"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_59"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="58"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_59"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_60"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="59"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_60"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_60"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="59"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_60"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_61"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="60"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_61"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_61"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="60"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_61"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_62"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="61"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_62"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_62"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="61"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_62"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_63"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="62"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_63"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+
+            <EditText
+                android:id="@+id/credit_63"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="62"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_63"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_64"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="63"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_64"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_64"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="63"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_64"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_65"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="64"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_65"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_65"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="64"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_65"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_66"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="65"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_66"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_66"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="65"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_66"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_67"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="66"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_67"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_67"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="66"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_67"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_68"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="67"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_68"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_68"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="67"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_68"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_69"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="68"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_69"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_69"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="68"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_69"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_70"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="69"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_70"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_70"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="69"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_70"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_71"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="70"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_71"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_71"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="70"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_71"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_72"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="71"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_72"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_72"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="71"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_72"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_73"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="72"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_73"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+
+            <EditText
+                android:id="@+id/credit_73"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="72"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_73"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_74"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="73"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_74"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_74"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="73"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_74"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_75"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="74"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_75"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_75"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="74"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_75"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_76"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="75"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_76"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_76"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="75"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_76"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_77"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="76"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_77"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_77"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="76"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_77"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_78"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="77"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_78"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_78"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="77"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_78"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_79"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="78"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_79"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_79"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="78"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_79"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_80"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="79"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_80"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_80"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="79"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_80"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_81"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="80"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_81"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_81"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="80"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_81"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_82"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="81"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_82"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_82"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="81"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_82"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_83"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="82"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_83"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+
+            <EditText
+                android:id="@+id/credit_83"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="82"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_83"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_84"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="83"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_84"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_84"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="83"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_84"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_85"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="84"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_85"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_85"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="84"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_85"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_86"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="85"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_86"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_86"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="85"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_86"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_87"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="86"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_87"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_87"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="86"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_87"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_88"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="87"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_88"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_88"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="87"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_88"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_89"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="88"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_89"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_89"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="88"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_89"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_90"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="89"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_90"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_90"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="89"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_90"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_91"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="90"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_91"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_91"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="90"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_91"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_92"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="91"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_92"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_92"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="91"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_92"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/score_93"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="92"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_93"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+
+            <EditText
+                android:id="@+id/credit_93"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="92"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_93"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_94"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="93"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_94"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_94"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="93"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_94"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_95"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="94"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_95"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_95"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="94"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_95"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_96"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="95"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_96"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_96"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="95"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_96"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_97"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="96"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_97"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_97"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="96"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_97"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_98"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="97"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_98"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/credit_98"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="97"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_98"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_99"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="98"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_99"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_99"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="98"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_99"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/score_100"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="99"
+                android:layout_column="0"
+                android:gravity="center"
+                android:hint="score_100"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/credit_100"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_row="99"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="credit_100"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="12" />
+
+        </GridLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="@string/valid_data"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/valid_data_num"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="415dp"
+        android:text="@string/valid_credit"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/valid_credit_num"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="415dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="480dp"
+        android:text="@string/valid_grade"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/valid_grade_num"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="480dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+
+
+
+
