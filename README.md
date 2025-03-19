@@ -1,4 +1,4 @@
-﻿# 🎓 Weighted Grade Calculator Software
+﻿# 🎓 Weighted Grade Calculator
 
 ## 📌 Project Overview  
 A simple and intuitive **weighted grade calculator** that allows users to input **course credits and grades** to compute their **weighted average grade**.  
@@ -17,6 +17,6 @@ Additionally, users can:
 
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/neutrino2306/Weighted-Grade-Calculator-Software.git
-cd Weighted-Grade-Calculator-Software
+git clone https://github.com/neutrino2306/Weighted-Grade-Calculator.git
+cd Weighted-Grade-Calculator
 ```
