@@ -3,10 +3,6 @@
 ## 📌 Project Overview  
 Weighted Grade Calculator is a mobile application designed to compute **weighted average grades** based on user-input **scores and corresponding credit values**.  
 Users can enter multiple course grades along with their credit values, and the app will automatically calculate **weighted average grade**.  
-Additionally, users can:
-- **Modify individual course data**.
-- **Clear all entries by triple-clicking**.
-- **Track the total number of credits**.
 
 ## 🚀 Features  
 - **📥 Data Input**
