@@ -17,7 +17,7 @@ Additionally, users can:
   - **Triple-click to clear all data.**
 - **📊 Grade Calculation**
   - Computes the **total credits**.
-  - Calculates the **weighted average grade**
+  - Calculates the **weighted average grade**.
 - **🎨 User-Friendly Interface**
   - Intuitive UI for easy data entry.
   - Buttons for clearing, checking total credits, and executing calculations.
