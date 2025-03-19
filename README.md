@@ -1,17 +1,26 @@
 ﻿# 🎓 Weighted Grade Calculator
 
 ## 📌 Project Overview  
-A simple and intuitive **weighted grade calculator** that allows users to input **course credits and grades** to compute their **weighted average grade**.  
+Weighted Grade Calculator is a mobile application designed to compute **weighted average grades** based on user-input **scores and corresponding credit values**.  
+Users can enter multiple course grades along with their credit values, and the app will automatically calculate **weighted average grade**.  
 Additionally, users can:
 - **Modify individual course data**.
 - **Clear all entries by triple-clicking**.
 - **Track the total number of credits**.
 
 ## 🚀 Features  
--  **Weighted GPA Calculation** – Automatically computes the weighted average based on course credits.  
--  **Edit Entries** – Modify any course's credit or grade after input.  
--  **Triple-Click Clear** – Instantly clear all data with a triple click.  
--  **Total Credits Summary** – Displays the total number of credits entered.
+- **📥 Data Input**
+  - Enter multiple course grades and their respective credit values.
+- **🔢 Data Management**
+  - Modify existing entries.
+  - Delete specific entries or the most recent one.
+  - **Triple-click to clear all data.**
+- **📊 Grade Calculation**
+  - Computes the **total credits**.
+  - Calculates the **weighted average grade**
+- **🎨 User-Friendly Interface**
+  - Intuitive UI for easy data entry.
+  - Buttons for clearing, checking total credits, and executing calculations.
 
 ## 🛠️ Tech Stack  
 - **Platform:** Android  
